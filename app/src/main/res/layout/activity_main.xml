@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.secondtry.MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:textColor="#00A1E4"
+        android:textSize="24sp"
+        android:paddingTop="16sp"
+        android:paddingLeft="16sp"
+        android:paddingBottom="4sp"
+        android:paddingRight="16sp"
+        android:id="@+id/about"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/about_summary"
+        android:textColor="#4f6682"
+        android:id="@+id/description"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:paddingTop="50sp"
+        android:textSize="16sp"
+        android:layout_below="@+id/about"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClicked"
+        android:text="start_booking"
+        android:background="#E40066"
+        android:padding = "8sp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="76dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
